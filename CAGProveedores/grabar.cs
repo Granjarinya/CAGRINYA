@@ -12,7 +12,7 @@ namespace CAGProveedores
 {
 	public class grabar : Form
 	{
-        public int prueba;
+        public int david;
 		public int[] leido = new int[100];
 		private char[] envio = new char[100];
 		public int[] tagleido = new int[50];
