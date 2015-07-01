@@ -56,3 +56,6 @@ C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Deb
 C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.csproj.GenerateResource.Cache
 C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.exe.manifest
 C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.application
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\bin\Debug\CAGProveedores.exe.config
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.exe
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.pdb
