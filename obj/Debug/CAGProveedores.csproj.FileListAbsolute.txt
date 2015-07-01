@@ -1,0 +1,58 @@
+C:\Users\informatic\Desktop\cag\source cag\bin\Debug\CAGProveedores.exe
+C:\Users\informatic\Desktop\cag\source cag\bin\Debug\CAGProveedores.pdb
+C:\Users\informatic\Desktop\cag\source cag\obj\Debug\CAGProveedores.exe
+C:\Users\informatic\Desktop\cag\source cag\obj\Debug\CAGProveedores.pdb
+C:\Users\informatic\Desktop\cag\source cag\obj\Debug\CAGProveedores.CAGProveedores.resources
+C:\Users\informatic\Desktop\cag\source cag\obj\Debug\CAGProveedores.grabar.resources
+C:\Users\informatic\Desktop\cag\source cag\obj\Debug\CAGProveedores.leer.resources
+C:\Users\informatic\Desktop\cag\source cag\obj\Debug\Properties.Resources.resources
+C:\Users\informatic\Desktop\cag\source cag\obj\Debug\CAGProveedores.csproj.GenerateResource.Cache
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\CAGProveedores.exe
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\CAGProveedores.pdb
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\CAGProveedores.CAGProveedores.resources
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\CAGProveedores.Form2.resources
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\CAGProveedores.grabar.resources
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\CAGProveedores.leer.resources
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\Properties.Resources.resources
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\CAGProveedores.csproj.GenerateResource.Cache
+C:\Users\informatic\Desktop\cag\source cag 2.4\bin\Debug\CAGProveedores.exe.config
+C:\Users\informatic\Desktop\cag\source cag 2.4\bin\Debug\CAGProveedores.exe
+C:\Users\informatic\Desktop\cag\source cag 2.4\bin\Debug\CAGProveedores.pdb
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\CAGProveedores.csprojResolveAssemblyReference.cache
+C:\Users\informatic\Desktop\cag\source cag 2.4\bin\Debug\CAGProveedores.exe.manifest
+C:\Users\informatic\Desktop\cag\source cag 2.4\bin\Debug\CAGProveedores.application
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\CAGProveedores.exe.manifest
+C:\Users\informatic\Desktop\cag\source cag 2.4\obj\Debug\CAGProveedores.application
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\bin\Debug\CAGProveedores.exe.config
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\CAGProveedores.exe
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\CAGProveedores.pdb
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\bin\Debug\CAGProveedores.exe.manifest
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\bin\Debug\CAGProveedores.application
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\bin\Debug\CAGProveedores.exe
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\bin\Debug\CAGProveedores.pdb
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\CAGProveedores.CAGProveedores.resources
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\CAGProveedores.Form2.resources
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\CAGProveedores.grabar.resources
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\CAGProveedores.leer.resources
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\Properties.Resources.resources
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\CAGProveedores.csproj.GenerateResource.Cache
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\CAGProveedores.exe.manifest
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\CAGProveedores.application
+C:\Users\Administrador\Documents\Carles\Cag Proveedores 2.4\David\source cag 2.4\obj\Debug\CAGProveedores.csprojResolveAssemblyReference.cache
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\bin\Debug\CAGProveedores.exe.config
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.exe
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.pdb
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\bin\Debug\CAGProveedores.exe.manifest
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\bin\Debug\CAGProveedores.application
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\bin\Debug\CAGProveedores.exe
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\bin\Debug\CAGProveedores.pdb
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.csprojResolveAssemblyReference.cache
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.CAGProveedores.resources
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.Form2.resources
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.Frm_Comprobacion.resources
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.grabar.resources
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.leer.resources
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\Properties.Resources.resources
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.csproj.GenerateResource.Cache
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.exe.manifest
+C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Debug\CAGProveedores.application
