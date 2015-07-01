@@ -12,6 +12,7 @@ namespace CAGProveedores
 {
 	public class grabar : Form
 	{
+        public int prueba;
 		public int[] leido = new int[100];
 		private char[] envio = new char[100];
 		public int[] tagleido = new int[50];
@@ -265,7 +266,8 @@ namespace CAGProveedores
         }
 		private void botonenviar_Click(object sender, EventArgs e)
 		{
-			int bytesToRead = this.serialPort1.BytesToRead;
+			
+            int bytesToRead = this.serialPort1.BytesToRead;
 			int num = -2;
 			byte[] array = new byte[bytesToRead];
 			int bytesToWrite = this.serialPort1.BytesToWrite;
