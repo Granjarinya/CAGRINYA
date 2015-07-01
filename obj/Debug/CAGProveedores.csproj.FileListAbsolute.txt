@@ -59,3 +59,17 @@ C:\Users\informatic\Documents\Visual Studio 2010\Projects\source cag 2.4\obj\Deb
 C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\bin\Debug\CAGProveedores.exe.config
 C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.exe
 C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.pdb
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\bin\Debug\CAGProveedores.exe.manifest
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\bin\Debug\CAGProveedores.application
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\bin\Debug\CAGProveedores.exe
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\bin\Debug\CAGProveedores.pdb
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.CAGProveedores.resources
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.Form2.resources
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.Frm_Comprobacion.resources
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.grabar.resources
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.leer.resources
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\Properties.Resources.resources
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.csproj.GenerateResource.Cache
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.exe.manifest
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\CAGRINYA-master\obj\Debug\CAGProveedores.application

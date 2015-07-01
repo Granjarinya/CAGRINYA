@@ -12,7 +12,6 @@ namespace CAGProveedores
 {
 	public class grabar : Form
 	{
-        public int carles;
 		public int[] leido = new int[100];
 		private char[] envio = new char[100];
 		public int[] tagleido = new int[50];
@@ -193,19 +192,10 @@ namespace CAGProveedores
                 }
             
         }
-        /// <summary>
-        /// Constructor Grabar
-        /// </summary>
-        /// <param name="puertocom"></param>
-        /// <param name="puertobaud"></param>
-        /// <param name="nbit"></param>
-        /// <param name="sbit"></param>
-        /// <param name="paridad"></param>
-        /// <param name="sound"></param>
+
 		public grabar(string puertocom, int puertobaud, int nbit, string sbit, string paridad, bool sound)
 		{
 			this.InitializeComponent();
-            //Control.CheckForIllegalCrossThreadCalls = false;
             this.tiempo = 0;
             int.TryParse(ConfigurationManager.AppSettings["tiempo"], out tiempo);
 			this.ruta = Directory.GetCurrentDirectory() + "\\confcag.txt";
@@ -420,20 +410,20 @@ namespace CAGProveedores
         private void grabado_error_mensaje(int t)
         {
           
-            Frm_Comprobacion comprueba = new Frm_Comprobacion(Color.Red, t, "");
+            Frm_Comprobacion comprueba = new Frm_Comprobacion(t, 2);
             comprueba.ShowDialog();
             comprueba.Dispose();
         }
         
         private void grabado_ok_mensaje(int t)
         {
-            Frm_Comprobacion comprueba = new Frm_Comprobacion(Color.Green, t, "");
+            Frm_Comprobacion comprueba = new Frm_Comprobacion(t, 1);
             comprueba.ShowDialog();
             comprueba.Dispose();
         }
         private void grabado_palet_mensaje(int t) //Falta este
         {
-            Frm_Comprobacion comprueba = new Frm_Comprobacion(Color.Brown, t, "");
+            Frm_Comprobacion comprueba = new Frm_Comprobacion(t, 3);
             comprueba.ShowDialog();
             comprueba.Dispose();
         }

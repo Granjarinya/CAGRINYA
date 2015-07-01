@@ -43,24 +43,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CAGProveedores.exe" size="455168">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CAGProveedores.exe" size="456192">
       <assemblyIdentity name="CAGProveedores" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>g2/3zbW/nezSF9oceWDhsyG7CT4=</dsig:DigestValue>
+        <dsig:DigestValue>1NAwjrI7TrNkfsgdJ4aZq5qfuLE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="CAGProveedores.exe.config" size="257">
+  <file name="CAGProveedores.exe.config" size="249">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>VUWy4eQC0hO0XOKUSVvHF7n7q4E=</dsig:DigestValue>
+      <dsig:DigestValue>v5ztzL4h/s4D7B+ebyVOH3aTkkk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="icono.Ico" size="73478">
