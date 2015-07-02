@@ -32,7 +32,7 @@ namespace CAGProveedores
 		public string[] puertoscom;
 		public string log;
 		public string ruta;
-		public int contador = 0;
+		public int contador = 35;
        
 		public SoundPlayer soundPlayer = new SoundPlayer();
 		public bool sonido;
@@ -110,7 +110,6 @@ namespace CAGProveedores
         public int numcaja;
         public int tiempo;
         private ToolStripMenuItem opcionesToolStripMenuItem;
-        private Label label1;
         byte[] array_envio_old;
 
         public bool new_log_activo
@@ -407,23 +406,23 @@ namespace CAGProveedores
 		}
         
 
-        private void grabado_error_mensaje(int t)
+        private void grabado_error_mensaje(int t, int contador)
         {
           
-            Frm_Comprobacion comprueba = new Frm_Comprobacion(t, 2);
+            Frm_Comprobacion comprueba = new Frm_Comprobacion(t, 2, contador);
             comprueba.ShowDialog();
             comprueba.Dispose();
         }
         
-        private void grabado_ok_mensaje(int t)
+        private void grabado_ok_mensaje(int t, int contador)
         {
-            Frm_Comprobacion comprueba = new Frm_Comprobacion(t, 1);
+            Frm_Comprobacion comprueba = new Frm_Comprobacion(t, 1, contador);
             comprueba.ShowDialog();
             comprueba.Dispose();
         }
-        private void grabado_palet_mensaje(int t) //Falta este
+        private void grabado_palet_mensaje(int t, int contador) //Falta este
         {
-            Frm_Comprobacion comprueba = new Frm_Comprobacion(t, 3);
+            Frm_Comprobacion comprueba = new Frm_Comprobacion(t, 3, contador);
             comprueba.ShowDialog();
             comprueba.Dispose();
         }
@@ -432,10 +431,10 @@ namespace CAGProveedores
             int.TryParse(ConfigurationManager.AppSettings["tiempo"], out tiempo);
             if (tiempo >= 0)
             {
-                System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_palet_mensaje(tiempo); });
+                System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_palet_mensaje(tiempo, contador); });
                 myThread.Start();
             }
-            if (File.Exists(fich_newLog) == false)
+            if (!File.Exists(fich_newLog) == false)
             {
                 string linea_a_guardar = "Palet Completo a " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
                 System.IO.StreamWriter sw = new System.IO.StreamWriter(fich_newLog, true, System.Text.Encoding.Default);
@@ -458,11 +457,10 @@ namespace CAGProveedores
 			while (num != 47 & num2 != 0);
 			if (num2 == 1)
 			{
-                //Si en la lectura anterior se habia llenado el palet, se reinicia el contador
+                //Si en la lectura anterior se habia llegado a 40 (palet lleno), se reinicia el contador
                 if (this.contador == 40) 
                 { 
                     this.contador = 0;
-                    palet_completo();
                 } 
 				this.contador++;
 				this.contador_txt.Text = "Nº de TAG grabado:  " + Convert.ToString(this.contador) + " de 40";
@@ -471,7 +469,7 @@ namespace CAGProveedores
                 int.TryParse(ConfigurationManager.AppSettings["tiempo"], out tiempo);
                 if (tiempo >= 0)
                 {
-                    System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_ok_mensaje(tiempo); });
+                    System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_ok_mensaje(tiempo, contador); });
                     myThread.Start();
                 }
 				if (this.sonido)
@@ -487,9 +485,11 @@ namespace CAGProveedores
 					this.leerbtn.Enabled = true;
 				}
                 int.TryParse(ConfigurationManager.AppSettings["tiempo"], out tiempo);
-                if (tiempo >= 0)
+                if (contador == 40)
+                    palet_completo();
+                else if (tiempo >= 0)
                 {
-                    System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_ok_mensaje(tiempo); });
+                    System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_ok_mensaje(tiempo, contador); });
                     myThread.Start();
                 }
                 Grabar_log_new();
@@ -505,15 +505,7 @@ namespace CAGProveedores
 						streamWriter.WriteLine(this.lecturatag.Text);
 					}
 				}
-                if (this.contador == 40)
-                {
-                    int.TryParse(ConfigurationManager.AppSettings["tiempo"], out tiempo);
-                    if (tiempo >= 0)
-                    {
-                        System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_palet_mensaje(tiempo + 2); });
-                        myThread.Start();
-                    }
-                }
+                
 			}
 			else
 			{
@@ -527,7 +519,7 @@ namespace CAGProveedores
                 int.TryParse(ConfigurationManager.AppSettings["tiempo"], out tiempo);
                 if (tiempo >= 0)
                 {
-                    System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_error_mensaje(tiempo); });
+                    System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_error_mensaje(tiempo, contador); });
                     myThread.Start();
                 }
 				if (this.modo == 0)
@@ -602,7 +594,7 @@ namespace CAGProveedores
                     int.TryParse(ConfigurationManager.AppSettings["tiempo"], out tiempo);
                     if (tiempo >= 0)
                     {
-                        System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_error_mensaje(tiempo); });
+                        System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_error_mensaje(tiempo, contador); });
                         myThread.Start();
                     }
 					this.modobtn.Enabled = true;
@@ -1255,7 +1247,6 @@ namespace CAGProveedores
             this.cargarbtn = new System.Windows.Forms.Button();
             this.contador_txt = new System.Windows.Forms.Label();
             this.Logo = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
@@ -1875,22 +1866,12 @@ namespace CAGProveedores
             this.Logo.TabIndex = 109;
             this.Logo.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 180;
-            this.label1.Text = "label1";
-            // 
             // grabar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(841, 604);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.contador_txt);
             this.Controls.Add(this.cargarbtn);
             this.Controls.Add(this.logtxt);

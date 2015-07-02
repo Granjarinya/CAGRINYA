@@ -13,11 +13,12 @@ namespace CAGProveedores
         /*Constructor de la pantalla que se lanza tras leer un TAG.
           Es un formulario vacio (a escepto de un mensaje) que se pinta de un color u otro,
           dependiendo del tipo de mensaje que tenga que mostrar*/
-        public Frm_Comprobacion(int segundos, int tipoMensaje)
+        public Frm_Comprobacion(int segundos, int tipoMensaje, int contador)
         {
             InitializeComponent();
             timer1.Interval = segundos * 1000;    // pasamos de segundos a milisegundos
-
+            string mensaje = "Nº de TAG grabado:  " + Convert.ToString(contador) + " de 40";
+            this.NumTAGStxt.Text = mensaje;
             if (!timer1.Enabled)
                 timer1.Enabled = true;    // Activamos el Timer si no esta Enabled (Activado)
 

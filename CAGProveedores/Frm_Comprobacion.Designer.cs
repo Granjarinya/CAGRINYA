@@ -33,6 +33,7 @@
             this.TAGGRABADOtxt = new System.Windows.Forms.Label();
             this.PALETCOMPLETOtxt = new System.Windows.Forms.Label();
             this.TAGNOGRABADOtxt = new System.Windows.Forms.Label();
+            this.NumTAGStxt = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer1
@@ -75,11 +76,22 @@
             this.TAGNOGRABADOtxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TAGNOGRABADOtxt.Visible = false;
             // 
+            // NumTAGStxt
+            // 
+            this.NumTAGStxt.AutoSize = true;
+            this.NumTAGStxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumTAGStxt.Location = new System.Drawing.Point(250, 466);
+            this.NumTAGStxt.Name = "NumTAGStxt";
+            this.NumTAGStxt.Size = new System.Drawing.Size(0, 73);
+            this.NumTAGStxt.TabIndex = 3;
+            this.NumTAGStxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Frm_Comprobacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1137, 519);
+            this.Controls.Add(this.NumTAGStxt);
             this.Controls.Add(this.TAGNOGRABADOtxt);
             this.Controls.Add(this.PALETCOMPLETOtxt);
             this.Controls.Add(this.TAGGRABADOtxt);
@@ -103,5 +115,6 @@
         private System.Windows.Forms.Label TAGGRABADOtxt;
         private System.Windows.Forms.Label PALETCOMPLETOtxt;
         private System.Windows.Forms.Label TAGNOGRABADOtxt;
+        private System.Windows.Forms.Label NumTAGStxt;
     }
 }
