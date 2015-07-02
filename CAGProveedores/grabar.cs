@@ -436,6 +436,22 @@ namespace CAGProveedores
             comprueba.ShowDialog();
             comprueba.Dispose();
         }
+        private void palet_completo() 
+        {
+            int.TryParse(ConfigurationManager.AppSettings["tiempo"], out tiempo);
+            if (tiempo >= 0)
+            {
+                System.Threading.Thread myThread = new System.Threading.Thread(delegate() { grabado_palet_mensaje(tiempo); });
+                myThread.Start();
+            }
+            if (File.Exists(fich_newLog) == false)
+            {
+                string linea_a_guardar = "Palet Completo a " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+                System.IO.StreamWriter sw = new System.IO.StreamWriter(fich_newLog, true, System.Text.Encoding.Default);
+                sw.WriteLine(linea_a_guardar);
+                sw.Close();
+            }
+        }
 		private void confirmar(object sender, EventArgs e)
 		{
 			int num = -1;
@@ -452,7 +468,11 @@ namespace CAGProveedores
 			if (num2 == 1)
 			{
                 //Si en la lectura anterior se habia llenado el palet, se reinicia el contador
-                if (this.contador == 40) this.contador = 0; 
+                if (this.contador == 40) 
+                { 
+                    this.contador = 0;
+                    palet_completo();
+                } 
 				this.contador++;
 				this.contador_txt.Text = "Nº de TAG grabado:  " + Convert.ToString(this.contador) + " de 40";
                 this.confirmaciontxt.ForeColor = Color.Green;
